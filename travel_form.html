@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.google.com/specimen/Raleway?selection.family=Raleway">
+</head>
+<body>
+    <div id="instructions"><h1>Please provide your flight information in the form below</h1></div>
+    <div class="form">
+        <form onsubmit="alertInfo(); return false;">
+            <div class="form-group">
+                First Name:<br>
+                <input type="text" id="firstName" placeholder="ie. John"><br>
+                Last Name:<br>
+                <input type="text" id="lastName" placeholder="ie. Smith"><br>
+                Age:<br>
+                <input type="number" id="age"><br>
+                Gender:<br>
+                M<input type="radio" name="genderButton" id="isMale">
+                F<input type="radio" name="genderButton" id="isfemale">
+                O<input type="radio" name="genderButton" id="isOther"><br>
+                <br>
+                Destination:<br>
+                <select id="destination">
+                  <option value="Moridor">Moridor</option>
+                  <option value="The Shire">The Shire</option>
+                  <option value="Elrondale">Elrondale</option>
+                  <option value="Minneapolis">Minneapolis</option>
+                </select><br>
+                <br>
+                Dietary Restrictions: check all that apply<br>
+                <input type="checkbox" name="food" value="Vegetarian">Vegetarian
+                <input type="checkbox" name="food" value="Gluten Free">Gluten Free
+                <input type="checkbox" name="food" value="Palio">Palio<br>
+                <br>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <div class=image>
+      <img src="airplane.png">  
+    </div>
+    <script src="travel.js"></script>
+</body>
+</html>
